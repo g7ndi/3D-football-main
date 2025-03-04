@@ -4,9 +4,9 @@
   "description": "Simple starter for Three.js projects with TypeScript",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.development.js",
-    "build": "webpack --config webpack.distribution.js"
+    "start": "node server.js",
+    "build": "webpack --config webpack.distribution.js",
+    "dev": "webpack serve --open --config webpack.development.js"
   },
   "keywords": [],
   "author": "Yassine Dardour",
@@ -16,6 +16,7 @@
     "@types/dat.gui": "^0.7.12",
     "bootstrap": "^5.2.3",
     "dat.gui": "^0.7.9",
+    "express": "^4.21.2",
     "gsap": "^3.12.5",
     "howler": "^2.2.3",
     "jquery": "^3.6.3",
